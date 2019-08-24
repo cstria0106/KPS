@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KPS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+
+<body>
+    <div id="content">
+        <div id="buttons">
+            <button class="btn btn-primary" id="settingbtn">
+                <span class="fa fa-user-cog"></span> 설정
+            </button>
+        </div>
+
+        <div id="kpstitle">KPS</div>
+        <div id="kps">
+        </div>
+
+        <div id="display">
+        </div>
+    </div>
+
+    <div id="setting">
+        <div id="box">
+            <div id="closebtn">
+                <span class="fa fa-times"></span>
+            </div>
+
+            <div id="content">
+                <h1>측정 종료 타이머 설정</h1>
+                <div id="timerdelayinput" class="input-group">
+                    <input id="timerdelay" class="form-control" type="text">
+                </div>
+
+                <h1>키 갯수 설정</h1>
+
+                <div id="keycountinput" class="input-group">
+                    <input id="keycount" class="form-control" type="text">
+                </div>
+
+                <h1>키 설정</h1>
+                <div id="keys">
+                </div>
+            </div>
+
+            <div id="keyready">
+                <div id="display">
+                    원하시는 키를 입력하세요.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/program.js"></script>
+</body>
+
+</html>

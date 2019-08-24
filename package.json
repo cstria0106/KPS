@@ -1,0 +1,59 @@
+{
+  "build": {
+    "asar": true,
+    "appId": "com.koati.kps",
+    "productName": "KPS",
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "createDesktopShortcut": true
+    }
+  },
+  "name": "keykey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "rebuildiohook": "electron-rebuild -f -w iohook",
+    "build:win64": "build --win --x64"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^6.0.4",
+    "electron-builder": "^21.2.0",
+    "electron-rebuild": "^1.8.6"
+  },
+  "dependencies": {
+    "iohook": "^0.6.1",
+    "jquery": "^3.4.1",
+    "node-abi": "^2.11.0"
+  },
+  "iohook": {
+    "targets": [
+      "node-64",
+      "electron-73"
+    ],
+    "platforms": [
+      "win32",
+      "darwin"
+    ],
+    "arches": [
+      "x64",
+      "ia32"
+    ]
+  }
+}
